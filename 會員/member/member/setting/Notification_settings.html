@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>通知設定</title> <!--網頁名字-->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"><!--CSS樣式-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        /*圖片背景*/
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+    </style>
+    <link rel="icon" href="../icon.ico" type="image/x-icon" />
+
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+
+        <a class="navbar-brand" href="../member_homepage/member_homepage1.html">Hey!Order</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+        </div>
+
+        <input maxlength="128" autocomplete="off" type="text" id="nickname" name="nickname" placeholder="搜尋">
+        <style>
+            webkit-input-placeholder {
+                color: #999;
+            }
+        </style>
+
+        <!--以上為搜尋欄位的樣式-->
+        <!--<div class="text-right">
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li>
+                        <a class="nav-link" href="#"><small>登入</small></a>
+                    </li>
+                    <li class="navbar__link-separator">
+                        <a class="nav-link">|</a>
+                    </li>
+                    <li class="navbar__link navbar__link--account navbar__link--tappable navbar__link--hoverable navbar__link-text navbar__link-text--medium">
+                        <a class="nav-link" href="#"><small>註冊</small></a>
+                    </li>
+                </ul>
+            </div>
+        </div>-->
+
+        <div class="text-right">
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li>
+                        <a class="nav-link" href="../shoppingcart/shoppingcart.html"><small><img src="../car.png" width="20" height="20" />購物車</small></a>
+                    </li>
+                    <li class="navbar__link-separator">
+                        <a class="nav-link">|</a>
+                    </li>
+
+                    <li class="navbar__link navbar__link--account navbar__link--tappable navbar__link--hoverable navbar__link-text navbar__link-text--medium">
+                        <a class="nav-link" href="#"><small>歡迎登入!</small></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+
+        <div class="dropdown">
+            <button type="button" class="btn btn-body dropdown-toggle" data-toggle="dropdown">會員專區</button>
+            <div class="dropdown-menu ">
+
+                <a class="dropdown-item" href="../setting/Basic_settings.html">個人設定</a>
+                <a class="dropdown-item" href="../pay/paysetting.html">付款管理</a>
+                <a class="dropdown-item" href="../meal status/meal status.html">餐點狀態</a>
+                <a class="dropdown-item" href="../Discount code/discount code.html">我的優惠碼</a>
+                <a class="dropdown-item" href="../invite/invite.html">邀請好友</a>
+                <a class="dropdown-item" href="../Customer service/customer service.html">聯絡客服</a>
+                <a class="dropdown-item" href="#">登出</a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>Hey!Order</h1>
+        <p>
+            你還在慢慢排隊點餐嗎？<br />
+            趕快來使用Hey!Order讓你比別人提早一步吃飯吧！
+        </p><br />
+        We will make your life more convenient.
+
+    </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <font face="Microsoft JhengHei"><a class="navbar-brand" href="../member_homepage/member_homepage1.html">首頁</a></font>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../setting/Basic_settings.html">個人設定</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../setting/Notification_settings.html">通知設定</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../setting/AboutUs.html">關於我們</a>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top:30px">
+        <div class="row">
+
+            <div class="col-sm-8">
+
+                
+                    <font face="monospace" size="4">
+
+
+                        <p>
+                            <strong>
+                                訂單通知:<input type="button" value="開啟" style="width:90px;height:40px;font-size:20px;">
+                                <input type="button" value="關閉" style="width:90px;height:40px;font-size:20px;">
+                            </strong>
+                        </p>
+                        <p>
+                            <strong>
+                                公告通知:<input type="button" value="開啟" style="width:90px;height:40px;font-size:20px;">
+                                <input type="button" value="關閉" style="width:90px;height:40px;font-size:20px;">
+                            </strong>
+                        </p>                   
+                        <p>
+
+                            <strong>
+                                優惠通知:<input type="button" value="開啟" style="width:90px;height:40px;font-size:20px;">
+                                <input type="button" value="關閉" style="width:90px;height:40px;font-size:20px;">
+                            </strong>
+                        </p>
+
+                    </font>
+               
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container" style="margin-top:30px">
+
+
+    </div>
+
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <p>
+            <h6>
+                聯繫我們09123456789
+            </h6>
+
+        </p>
+
+    </div>
+</body>
+</html>

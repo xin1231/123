@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HeyOrderModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Meals">
+    <Key>
+      <PropertyRef Name="tbMeNO" />
+    </Key>
+    <Property Name="tbShNO" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="tbMeNO" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="tbMeNam" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbMePic" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="tbMeCate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbMeTpe" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="tbMeSiz" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="tbMeNum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbMeNot" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="tbFbkFlg" Type="Int32" />
+    <Property Name="tbFbkCdt" Type="DateTime" Precision="3" />
+    <Property Name="tbFbkMdt" Type="DateTime" Precision="3" />
+    <Property Name="tbFbkCid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbFbkMid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbFbkCip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbFbkMip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Member">
+    <Key>
+      <PropertyRef Name="tbMbrNO" />
+    </Key>
+    <Property Name="tbMbrCde" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="tbMbrNO" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="tbMbrNam" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="tbMbrUid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbMbrPwd" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="tbMbrTel" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="tbMbrTelOK" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="tbMbrEM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbMbrEMOK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbMbrNot" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="tbFbkFlg" Type="Int32" />
+    <Property Name="tbFbkCdt" Type="DateTime" Precision="3" />
+    <Property Name="tbFbkMdt" Type="DateTime" Precision="3" />
+    <Property Name="tbFbkCid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbFbkMid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbFbkCip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbFbkMip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="tbOrNO" />
+    </Key>
+    <Property Name="tbOrNO" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="tbMbrNO" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="tbShNam" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="tbMeNam" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="tbOrNum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbOrNot" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="tbOrDct" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="tbFbkFlg" Type="Int32" />
+    <Property Name="tbFbkCdt" Type="DateTime" Precision="3" />
+    <Property Name="tbFbkMdt" Type="DateTime" Precision="3" />
+    <Property Name="tbFbkCid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbFbkMid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbFbkCip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbFbkMip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Shop">
+    <Key>
+      <PropertyRef Name="tbShNO" />
+    </Key>
+    <Property Name="tbShNO" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="tbShNam" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="tbShPic" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="tbShTel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbShTim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbShNot" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="tbFbkFlg" Type="Int32" />
+    <Property Name="tbFbkCdt" Type="DateTime" Precision="3" />
+    <Property Name="tbFbkMdt" Type="DateTime" Precision="3" />
+    <Property Name="tbFbkCid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbFbkMid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbFbkCip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tbFbkMip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="HeyOrderEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Meals" EntityType="Self.Meals" />
+    <EntitySet Name="Member" EntityType="Self.Member" />
+    <EntitySet Name="Order" EntityType="Self.Order" />
+    <EntitySet Name="Shop" EntityType="Self.Shop" />
+  </EntityContainer>
+</Schema>

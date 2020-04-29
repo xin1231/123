@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="MainNew.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<asp:ContentPlaceHolder ID="head" runat="server">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"><title>Hey!Order</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <style>
+            /*圖片背景*/
+            .fakeimg {
+                height: 200px;
+                background: #aaa;
+            }
+        </style>
+        <link rel="icon" href="icon.ico" type="image/x-icon" />
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <a class="navbar-brand" href="#">Hey!Order</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            </div>
+            <input aria-label="" class="" maxlength="128" placeholder="" autocomplete="off" value="">
+            <div class="text-right">
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <a class="nav-link" href="#"><small>登入</small></a>
+                        <div class="navbar__link-separator">
+                            <a class="nav-link">|</a></div>
+                        <li class="navbar__link navbar__link--account navbar__link--tappable navbar__link--hoverable navbar__link-text navbar__link-text--medium"><a class="nav-link" href="#"><small>註冊</small></a> </li>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button type="button" class="btn btn-body dropdown-toggle" data-toggle="dropdown">
+                    會員專區
+                </button>
+                <div class="dropdown-menu ">
+                    <a class="dropdown-item" href="#">個人資料</a> <a class="dropdown-item" href="#">我的訂單</a> <a class="dropdown-item" href="#">歷史訂單</a> <a class="dropdown-item" href="#">優惠碼</a> <a class="dropdown-item" href="#">邀請好友</a> <a class="dropdown-item" href="#">客服中心</a> <a class="dropdown-item" href="#">登出</a>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </head>
+</asp:ContentPlaceHolder>
+
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

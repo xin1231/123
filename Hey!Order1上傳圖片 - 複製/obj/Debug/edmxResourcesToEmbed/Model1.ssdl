@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HeyOrderModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Meals">
+    <Key>
+      <PropertyRef Name="tbMeNO" />
+    </Key>
+    <Property Name="tbShNO" Type="nvarchar" MaxLength="20" />
+    <Property Name="tbMeNO" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="tbMeNam" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbMePic" Type="nvarchar(max)" />
+    <Property Name="tbMeCate" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbMeTpe" Type="nvarchar" MaxLength="20" />
+    <Property Name="tbMeSiz" Type="nvarchar" MaxLength="20" />
+    <Property Name="tbMeNum" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbMeNot" Type="nvarchar" MaxLength="512" />
+    <Property Name="tbFbkFlg" Type="int" />
+    <Property Name="tbFbkCdt" Type="datetime" />
+    <Property Name="tbFbkMdt" Type="datetime" />
+    <Property Name="tbFbkCid" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbFbkMid" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbFbkCip" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbFbkMip" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Member">
+    <Key>
+      <PropertyRef Name="tbMbrNO" />
+    </Key>
+    <Property Name="tbMbrCde" Type="nvarchar" MaxLength="20" />
+    <Property Name="tbMbrNO" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="tbMbrNam" Type="nvarchar" MaxLength="20" />
+    <Property Name="tbMbrUid" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbMbrPwd" Type="nvarchar" MaxLength="512" />
+    <Property Name="tbMbrTel" Type="nvarchar" MaxLength="20" />
+    <Property Name="tbMbrTelOK" Type="nvarchar" MaxLength="20" />
+    <Property Name="tbMbrEM" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbMbrEMOK" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbMbrNot" Type="nvarchar" MaxLength="512" />
+    <Property Name="tbFbkFlg" Type="int" />
+    <Property Name="tbFbkCdt" Type="datetime" />
+    <Property Name="tbFbkMdt" Type="datetime" />
+    <Property Name="tbFbkCid" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbFbkMid" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbFbkCip" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbFbkMip" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="tbOrNO" />
+    </Key>
+    <Property Name="tbOrNO" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="tbMbrNO" Type="nvarchar" MaxLength="20" />
+    <Property Name="tbShNam" Type="nvarchar" MaxLength="20" />
+    <Property Name="tbMeNam" Type="nvarchar" MaxLength="20" />
+    <Property Name="tbOrNum" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbOrNot" Type="nvarchar" MaxLength="512" />
+    <Property Name="tbOrDct" Type="nvarchar" MaxLength="20" />
+    <Property Name="tbFbkFlg" Type="int" />
+    <Property Name="tbFbkCdt" Type="datetime" />
+    <Property Name="tbFbkMdt" Type="datetime" />
+    <Property Name="tbFbkCid" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbFbkMid" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbFbkCip" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbFbkMip" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Shop">
+    <Key>
+      <PropertyRef Name="tbShNO" />
+    </Key>
+    <Property Name="tbShNO" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="tbShNam" Type="nvarchar" MaxLength="20" />
+    <Property Name="tbShPic" Type="nvarchar" MaxLength="512" />
+    <Property Name="tbShTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbShTim" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbShNot" Type="nvarchar(max)" />
+    <Property Name="tbFbkFlg" Type="int" />
+    <Property Name="tbFbkCdt" Type="datetime" />
+    <Property Name="tbFbkMdt" Type="datetime" />
+    <Property Name="tbFbkCid" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbFbkMid" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbFbkCip" Type="nvarchar" MaxLength="50" />
+    <Property Name="tbFbkMip" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="HeyOrderModelStoreContainer">
+    <EntitySet Name="Meals" EntityType="Self.Meals" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Member" EntityType="Self.Member" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Shop" EntityType="Self.Shop" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,374 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IZCls
+</name>
+</assembly>
+<members>
+<member name="F:IZCls.Cookie.StrAll">
+	<summary>
+ Cookie完整字串
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IZCls.Cookie.AddValue(System.String,System.String)">
+	<summary>
+ 新增變數值
+ </summary>
+	<param name="VarName">變數名稱</param>
+	<param name="Value">值</param>
+	<remarks></remarks>
+</member><member name="M:IZCls.Cookie.GetStr">
+	<summary>
+ 取得已串接字串
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.Cookie.SetValue(System.String)">
+	<summary>
+ 設定cookie字串
+ </summary>
+	<param name="StrA"></param>
+	<remarks></remarks>
+</member><member name="M:IZCls.Cookie.GetValueArr">
+	<summary>
+ 取得變數與值陣列
+ </summary>
+	<returns>string(,)</returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.Cookie.GetArrValue(System.String[0:,0:],System.String)">
+	<summary>
+ 取陣列名稱對應的值
+ </summary>
+	<param name="Arrtmp"></param>
+	<param name="NameStr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.DataAccess.GetPageLstToTable(System.Int32,System.Int32,System.String,System.Int32)">
+	<summary>
+ DataList分頁模組ByTable原始資料
+ </summary>
+	<param name="AllSelectcount">資料數</param>
+	<param name="PageSize">每篇筆數</param>
+	<param name="PageI">目前頁數</param>
+	<param name="PageCountSize">每頁篇數</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.DataAccess.SetPageLstUrl(System.Data.DataTable,System.String,System.String)">
+	<summary>
+ 設定分頁連結
+ </summary>
+	<param name="tb"></param>
+	<param name="PageFieldID"></param>
+	<param name="BackTyp"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.ImageAccess.ResizeImg(System.Web.UI.WebControls.FileUpload@,System.Int32,System.String)">
+	<summary>
+ 改變圖片Size存檔
+ </summary>
+	<param name="FileUpload"></param>
+	<param name="widthlim"></param>
+	<param name="pathS"></param>
+	<remarks></remarks>
+</member><member name="M:IZCls.ImageAccess.ResizeImgFromStream(System.IO.Stream@,System.Int32,System.String)">
+	<summary>
+  改變圖片Size存檔 從 Stream
+ </summary>
+	<param name="StreamT"></param>
+	<param name="widthlim"></param>
+	<param name="pathS"></param>
+	<remarks></remarks>
+</member><member name="M:IZCls.SecurityAccess.Base64Encode(System.String)">
+	<summary>
+ Base64編碼 使用預設語言編碼
+ </summary>
+	<param name="SourceStr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.SecurityAccess.Base64Encode(System.String,System.String)">
+	<summary>
+ 使用自訂語言編碼 進行Base64編碼
+ </summary>
+	<param name="SourceStr"></param>
+	<param name="CodePage"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.SecurityAccess.Base64Decode(System.String)">
+	<summary>
+  Base64解碼 使用預設語言解碼
+ </summary>
+	<param name="CodeStr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.SecurityAccess.Base64Decode(System.String,System.String)">
+	<summary>
+ 使用自訂語言解碼 進行Base64解碼
+ </summary>
+	<param name="CodeStr"></param>
+	<param name="CodePage"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.SecurityAccess.MD5Encode(System.String)">
+	<summary>
+ MD5 加密
+ </summary>
+	<param name="CodeStr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.FileAccess.ReadAllFromFile(System.String,System.Text.Encoding)">
+	<summary>
+ 讀取檔案內容依照設定的地區編碼
+ </summary>
+	<param name="FileName">檔案路徑名稱</param>
+	<param name="Text_Encoding">編碼</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.FileAccess.GetFleLst(System.String,System.String)">
+	<summary>
+ 取資料夾檔案清單
+ </summary>
+	<param name="DirNme"></param>
+	<param name="UpDirNme"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.FileAccess.DeleteDir(System.String,System.String)">
+	<summary>
+ 刪除整個資料夾
+ </summary>
+	<param name="DirNme"></param>
+	<param name="SelfKey"></param>
+	<remarks></remarks>
+</member><member name="M:IZCls.FileAccess.FormateSize(System.Int64,System.String)">
+	<summary>
+ 格式化檔案大小
+ </summary>
+	<param name="SizeT"></param>
+	<param name="Typ"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.StringAccess.SwitchNumToChWord(System.Int32)">
+	<summary>
+ 轉換數字成通則國字(限千位以下)
+ </summary>
+	<param name="num"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.StringAccess.SwitchNumToChWordB(System.Int32)">
+	<summary>
+ 轉換數字成通則國字(限千位以下)   壹、貳、參、肆、伍、陸、柒、捌、玖、拾、佰、仟
+ </summary>
+	<param name="num"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.StringAccess.SwitchNumToCh(System.Int64,System.Int32)">
+	<summary>
+ 單位到兆的數字轉中文字
+ </summary>
+	<param name="num">待轉換的數字</param>
+	<param name="CurentP">請填0</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.StringAccess.SwitchNumToChB(System.Int64,System.Int32)">
+	<summary>
+ 單位到兆的數字轉中文大寫 壹、貳、參、肆、伍、陸、柒、捌、玖、拾、佰、仟
+ </summary>
+	<param name="num">待轉換的數字</param>
+	<param name="CurentP">請填0</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.StringAccess.HnumToAnum(System.Int64)">
+	<summary>
+ 半形數字轉成全型數字(1-&gt;１)
+ </summary>
+	<param name="NumT"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.StringAccess.Base64Encode(System.String)">
+	<summary>
+ Base64編碼 使用預設語言編碼
+ </summary>
+	<param name="SourceStr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.StringAccess.Base64Encode(System.String,System.String)">
+	<summary>
+ 使用自訂語言編碼 進行Base64編碼
+ </summary>
+	<param name="SourceStr"></param>
+	<param name="CodePage"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.StringAccess.Base64Decode(System.String)">
+	<summary>
+  Base64解碼 使用預設語言解碼
+ </summary>
+	<param name="CodeStr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.StringAccess.Base64Decode(System.String,System.String)">
+	<summary>
+ 使用自訂語言解碼 進行Base64解碼
+ </summary>
+	<param name="CodeStr"></param>
+	<param name="CodePage"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.StringAccess.MD5Encode(System.String)">
+	<summary>
+ MD5 加密
+ </summary>
+	<param name="CodeStr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.StringAccess.swStrToUnicode(System.String)">
+	<summary>
+ 將 ⭧ 字碼轉為對應字元
+ </summary>
+	<param name="SourceStr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.StringAccess.ClearHtmlTag(System.String)">
+	<summary>
+ 刪除HTML Tag
+ </summary>
+	<param name="HtmlStr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.StringAccess.getOneRndNum(System.Int32,System.Int32)">
+	<summary>
+ 取一個範圍內的隨機數
+ </summary>
+	<param name="StartNum"></param>
+	<param name="EndNum"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.StringAccess.getWeeklyNmeArr(System.Int32)">
+	<summary>
+ 取得一星期名稱陣列  
+ 0: {"日", "一", "二", "三", "四", "五", "六"}
+ 1: {"星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"}
+ 2: {"Sunday", "Monday", "Tuesday", "Wendnesday", "Thursday", "Friday", "Saturday"}
+ 3: {"Sun", "Mon", "Tue", "Wed", "Thu", "fri", "Sat"}
+ </summary>
+	<param name="TypInt"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.WebAccess.getWebPage(System.String,System.Text.Encoding)">
+	<summary>
+ 依編碼方式抓取網站原始碼
+ </summary>
+	<param name="Url"></param>
+	<param name="encode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.WebAccess.getWebPostFilePage(System.String,System.String[],System.String[],System.String[],System.String[],System.Text.Encoding)">
+	<summary>
+ 使用POST傳遞multipart/form-data
+ </summary>
+	<param name="Url"></param>
+	<param name="TextInputName">一般欄位名稱陣列</param>
+	<param name="TextInputValue">一般欄位內容陣列</param>
+	<param name="FileInputName">檔案欄位名稱陣列</param>
+	<param name="FilePath">檔案路徑陣列</param>
+	<param name="encode"></param>''' 
+ <returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.WebAccess.getWebPostPageRtnFileName(System.String,System.String,System.Text.Encoding,System.String)">
+	<summary>
+ 下載檔案
+ </summary>
+	<param name="Url">網址</param>
+	<param name="ParamStr">參數</param>
+	<param name="encode">參數編碼方式</param>
+	<param name="FilePathName">檔案路徑名稱</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.WebAccess.getBetweenValue(System.String,System.String,System.String)">
+	<summary>
+ 取得兩個字串中的值
+ </summary>
+	<param name="MainStr">待處理字串</param>
+	<param name="StartStr">起始字串</param>
+	<param name="EndStr">結束字串</param>
+	<returns>tmp(0) =&gt; 值 ; tmp(1) =&gt; 剩餘字串</returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.WebFormBase.SetCookieValue(System.Web.HttpResponse,System.String,System.String,System.Int32)">
+	<summary>
+ 設定Cookie並重設時間,可自行輸入時間
+ </summary>
+	<param name="response"></param>
+	<param name="CookieName"></param>
+	<param name="CookieValue"></param>
+	<param name="HourInt">HourInt (小時數)</param>
+	<remarks></remarks>
+</member><member name="M:IZCls.WebFormBase.JavaScriptRedirect(System.Web.HttpResponse,System.String,System.Boolean)">
+	<summary>
+ Javascript ReDirect
+ </summary>
+	<param name="response"></param>
+	<param name="reUrl">轉頁網址</param>
+	<param name="AfterLoad">true:載完再轉頁,false:立即轉頁</param>
+	<remarks></remarks>
+</member><member name="M:IZCls.WebFormBase.GenDropDownListItem(System.Web.UI.WebControls.DropDownList,System.String[],System.String[],System.String)">
+	<summary>
+ 產生　DropDownList
+ </summary>
+	<param name="dwList"></param>
+	<param name="TextArr"></param>
+	<param name="ValueArr"></param>
+	<param name="DefValue"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.WebFormBase.GenRdoList(System.Web.UI.WebControls.RadioButtonList,System.String[],System.String[],System.String)">
+	<summary>
+ 產生　RadioButtonList
+ </summary>
+	<param name="TextArr"></param>
+	<param name="ValueArr"></param>
+	<param name="DefValue"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.WebFormBase.GenChkBoxList(System.Web.UI.WebControls.CheckBoxList,System.String[],System.String[],System.String)">
+	<summary>
+ 產生　CheckBoxList
+ </summary>
+	<param name="chkList"></param>
+	<param name="TextArr"></param>
+	<param name="ValueArr"></param>
+	<param name="DefValue"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.WebFormBase.GetChkBoxSelectedItem(System.Web.UI.WebControls.CheckBoxList)">
+	<summary>
+ 取得ChkBoxList的選取項目值(使用','區隔)
+ </summary>
+	<param name="chkBox"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.WebFormBase.GetListItemValue(System.Web.UI.WebControls.ListBox)">
+	<summary>
+ 取ListBox所有Item值(用逗號區隔)
+ </summary>
+	<param name="ListBox"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.WebFormBase.GenRdoChkListItemArr(System.Data.DataTable,System.String,System.Boolean)">
+	<summary>
+ 取RadioButtonList 及ChkBoxListn 所使用的 TextArr及ValueArr 
+ </summary>
+	<param name="tb"></param>
+	<param name="fieldName"></param>
+	<param name="WidthEmpty"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IZCls.WebFormBase.DotToSqlStr(System.String)">
+	<summary>
+ 將逗號分開的字串改成多加單引號的狀態--&gt; '','',''
+ </summary>
+	<param name="Strtmp"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

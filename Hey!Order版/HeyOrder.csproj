@@ -1,0 +1,344 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{399DF8BA-A96C-4644-9AEE-2091AE813B89}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HeyOrder</RootNamespace>
+    <AssemblyName>HeyOrder</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44300</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdmAdd.aspx" />
+    <Content Include="AdmDel.aspx" />
+    <Content Include="AdmList.aspx" />
+    <Content Include="AdmUpd.aspx" />
+    <Content Include="CSS1.css" />
+    <Content Include="DeAdd.aspx" />
+    <Content Include="DeDel.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="DeList.aspx" />
+    <Content Include="DeUpd.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="MbrAdd.aspx" />
+    <Content Include="MbrDel.aspx" />
+    <Content Include="MbrList.aspx" />
+    <Content Include="CSS.css" />
+    <Content Include="MbrUpd.aspx" />
+    <Content Include="MeAdd.aspx" />
+    <Content Include="MeDel.aspx" />
+    <Content Include="MeList.aspx" />
+    <Content Include="MeUpd.aspx" />
+    <Content Include="OrAdd.aspx" />
+    <Content Include="OrDel.aspx" />
+    <Content Include="OrList.aspx" />
+    <Content Include="OrUpd.aspx" />
+    <Content Include="ShopDel.aspx" />
+    <Content Include="ShopList.aspx" />
+    <Content Include="ShopUpd.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="ShopAdd.aspx" />
+    <Content Include="Z9rYrnh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdmAdd.aspx.cs">
+      <DependentUpon>AdmAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdmAdd.aspx.designer.cs">
+      <DependentUpon>AdmAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdmDel.aspx.cs">
+      <DependentUpon>AdmDel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdmDel.aspx.designer.cs">
+      <DependentUpon>AdmDel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdmList.aspx.cs">
+      <DependentUpon>AdmList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdmList.aspx.designer.cs">
+      <DependentUpon>AdmList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdmUpd.aspx.cs">
+      <DependentUpon>AdmUpd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdmUpd.aspx.designer.cs">
+      <DependentUpon>AdmUpd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeAdd.aspx.cs">
+      <DependentUpon>DeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeAdd.aspx.designer.cs">
+      <DependentUpon>DeAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeDel.aspx.cs">
+      <DependentUpon>DeDel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeDel.aspx.designer.cs">
+      <DependentUpon>DeDel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeList.aspx.cs">
+      <DependentUpon>DeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeList.aspx.designer.cs">
+      <DependentUpon>DeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeUpd.aspx.cs">
+      <DependentUpon>DeUpd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeUpd.aspx.designer.cs">
+      <DependentUpon>DeUpd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MbrAdd.aspx.cs">
+      <DependentUpon>MbrAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MbrAdd.aspx.designer.cs">
+      <DependentUpon>MbrAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MbrDel.aspx.cs">
+      <DependentUpon>MbrDel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MbrDel.aspx.designer.cs">
+      <DependentUpon>MbrDel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MbrList.aspx.cs">
+      <DependentUpon>MbrList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MbrList.aspx.designer.cs">
+      <DependentUpon>MbrList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MbrUpd.aspx.cs">
+      <DependentUpon>MbrUpd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MbrUpd.aspx.designer.cs">
+      <DependentUpon>MbrUpd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MeAdd.aspx.cs">
+      <DependentUpon>MeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MeAdd.aspx.designer.cs">
+      <DependentUpon>MeAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MeDel.aspx.cs">
+      <DependentUpon>MeDel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MeDel.aspx.designer.cs">
+      <DependentUpon>MeDel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MeList.aspx.cs">
+      <DependentUpon>MeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MeList.aspx.designer.cs">
+      <DependentUpon>MeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MeUpd.aspx.cs">
+      <DependentUpon>MeUpd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MeUpd.aspx.designer.cs">
+      <DependentUpon>MeUpd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrAdd.aspx.cs">
+      <DependentUpon>OrAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrAdd.aspx.designer.cs">
+      <DependentUpon>OrAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrDel.aspx.cs">
+      <DependentUpon>OrDel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrDel.aspx.designer.cs">
+      <DependentUpon>OrDel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrList.aspx.cs">
+      <DependentUpon>OrList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrList.aspx.designer.cs">
+      <DependentUpon>OrList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrUpd.aspx.cs">
+      <DependentUpon>OrUpd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrUpd.aspx.designer.cs">
+      <DependentUpon>OrUpd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopAdd.aspx.cs">
+      <DependentUpon>ShopAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopAdd.aspx.designer.cs">
+      <DependentUpon>ShopAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShopDel.aspx.cs">
+      <DependentUpon>ShopDel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopDel.aspx.designer.cs">
+      <DependentUpon>ShopDel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShopList.aspx.cs">
+      <DependentUpon>ShopList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopList.aspx.designer.cs">
+      <DependentUpon>ShopList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShopUpd.aspx.cs">
+      <DependentUpon>ShopUpd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopUpd.aspx.designer.cs">
+      <DependentUpon>ShopUpd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61807</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44300/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此專案參考這部電腦上所缺少的 NuGet 套件。請啟用 NuGet 套件還原，以下載該套件。如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的檔案是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

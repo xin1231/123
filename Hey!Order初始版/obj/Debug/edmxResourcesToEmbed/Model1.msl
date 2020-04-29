@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HeyOrderModelStoreContainer" CdmEntityContainer="HeyOrderEntities">
+    <EntitySetMapping Name="Meals">
+      <EntityTypeMapping TypeName="HeyOrderModel.Meals">
+        <MappingFragment StoreEntitySet="Meals">
+          <ScalarProperty Name="tbShNO" ColumnName="tbShNO" />
+          <ScalarProperty Name="tbMeNO" ColumnName="tbMeNO" />
+          <ScalarProperty Name="tbMeNam" ColumnName="tbMeNam" />
+          <ScalarProperty Name="tbMePic" ColumnName="tbMePic" />
+          <ScalarProperty Name="tbMeCate" ColumnName="tbMeCate" />
+          <ScalarProperty Name="tbMeTpe" ColumnName="tbMeTpe" />
+          <ScalarProperty Name="tbMeSiz" ColumnName="tbMeSiz" />
+          <ScalarProperty Name="tbMeNum" ColumnName="tbMeNum" />
+          <ScalarProperty Name="tbMeNot" ColumnName="tbMeNot" />
+          <ScalarProperty Name="tbFbkFlg" ColumnName="tbFbkFlg" />
+          <ScalarProperty Name="tbFbkCdt" ColumnName="tbFbkCdt" />
+          <ScalarProperty Name="tbFbkMdt" ColumnName="tbFbkMdt" />
+          <ScalarProperty Name="tbFbkCid" ColumnName="tbFbkCid" />
+          <ScalarProperty Name="tbFbkMid" ColumnName="tbFbkMid" />
+          <ScalarProperty Name="tbFbkCip" ColumnName="tbFbkCip" />
+          <ScalarProperty Name="tbFbkMip" ColumnName="tbFbkMip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Member">
+      <EntityTypeMapping TypeName="HeyOrderModel.Member">
+        <MappingFragment StoreEntitySet="Member">
+          <ScalarProperty Name="tbMbrCde" ColumnName="tbMbrCde" />
+          <ScalarProperty Name="tbMbrNO" ColumnName="tbMbrNO" />
+          <ScalarProperty Name="tbMbrNam" ColumnName="tbMbrNam" />
+          <ScalarProperty Name="tbMbrUid" ColumnName="tbMbrUid" />
+          <ScalarProperty Name="tbMbrPwd" ColumnName="tbMbrPwd" />
+          <ScalarProperty Name="tbMbrTel" ColumnName="tbMbrTel" />
+          <ScalarProperty Name="tbMbrTelOK" ColumnName="tbMbrTelOK" />
+          <ScalarProperty Name="tbMbrEM" ColumnName="tbMbrEM" />
+          <ScalarProperty Name="tbMbrEMOK" ColumnName="tbMbrEMOK" />
+          <ScalarProperty Name="tbMbrNot" ColumnName="tbMbrNot" />
+          <ScalarProperty Name="tbFbkFlg" ColumnName="tbFbkFlg" />
+          <ScalarProperty Name="tbFbkCdt" ColumnName="tbFbkCdt" />
+          <ScalarProperty Name="tbFbkMdt" ColumnName="tbFbkMdt" />
+          <ScalarProperty Name="tbFbkCid" ColumnName="tbFbkCid" />
+          <ScalarProperty Name="tbFbkMid" ColumnName="tbFbkMid" />
+          <ScalarProperty Name="tbFbkCip" ColumnName="tbFbkCip" />
+          <ScalarProperty Name="tbFbkMip" ColumnName="tbFbkMip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order">
+      <EntityTypeMapping TypeName="HeyOrderModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="tbOrNO" ColumnName="tbOrNO" />
+          <ScalarProperty Name="tbMbrNO" ColumnName="tbMbrNO" />
+          <ScalarProperty Name="tbShNam" ColumnName="tbShNam" />
+          <ScalarProperty Name="tbMeNam" ColumnName="tbMeNam" />
+          <ScalarProperty Name="tbOrNum" ColumnName="tbOrNum" />
+          <ScalarProperty Name="tbOrNot" ColumnName="tbOrNot" />
+          <ScalarProperty Name="tbOrDct" ColumnName="tbOrDct" />
+          <ScalarProperty Name="tbFbkFlg" ColumnName="tbFbkFlg" />
+          <ScalarProperty Name="tbFbkCdt" ColumnName="tbFbkCdt" />
+          <ScalarProperty Name="tbFbkMdt" ColumnName="tbFbkMdt" />
+          <ScalarProperty Name="tbFbkCid" ColumnName="tbFbkCid" />
+          <ScalarProperty Name="tbFbkMid" ColumnName="tbFbkMid" />
+          <ScalarProperty Name="tbFbkCip" ColumnName="tbFbkCip" />
+          <ScalarProperty Name="tbFbkMip" ColumnName="tbFbkMip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Shop">
+      <EntityTypeMapping TypeName="HeyOrderModel.Shop">
+        <MappingFragment StoreEntitySet="Shop">
+          <ScalarProperty Name="tbShNO" ColumnName="tbShNO" />
+          <ScalarProperty Name="tbShNam" ColumnName="tbShNam" />
+          <ScalarProperty Name="tbShPic" ColumnName="tbShPic" />
+          <ScalarProperty Name="tbShTel" ColumnName="tbShTel" />
+          <ScalarProperty Name="tbShTim" ColumnName="tbShTim" />
+          <ScalarProperty Name="tbShNot" ColumnName="tbShNot" />
+          <ScalarProperty Name="tbFbkFlg" ColumnName="tbFbkFlg" />
+          <ScalarProperty Name="tbFbkCdt" ColumnName="tbFbkCdt" />
+          <ScalarProperty Name="tbFbkMdt" ColumnName="tbFbkMdt" />
+          <ScalarProperty Name="tbFbkCid" ColumnName="tbFbkCid" />
+          <ScalarProperty Name="tbFbkMid" ColumnName="tbFbkMid" />
+          <ScalarProperty Name="tbFbkCip" ColumnName="tbFbkCip" />
+          <ScalarProperty Name="tbFbkMip" ColumnName="tbFbkMip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
